@@ -1,0 +1,8 @@
+version: "3"
+services:
+  django_api:
+    #Add conf,
+  database:
+    #Add Conf
+  adminer:
+    #Add Conf
