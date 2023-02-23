@@ -4,9 +4,11 @@ services:
     build:
       context: . 
       dockerfile: DockerfileDjango
-    command: "manage.py runserver 0.0.0.0:8000"
+    command: "python manage.py runserver 0.0.0.0:8000"
     depends_on:
       - database
+    environment:
+      SERVICE_TO_WAIT: database:3306
     volumes:
       - "./API/.:/app/."
     ports:
