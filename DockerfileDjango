@@ -7,4 +7,5 @@ WORKDIR /app
 RUN pip install django \
 && pip install djangorestframework \
 && pip install django-filter \
-&& pip install markdown
+&& pip install markdown \
+&& pip install mysqlclient
