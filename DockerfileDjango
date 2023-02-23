@@ -9,3 +9,7 @@ RUN pip install django \
 && pip install django-filter \
 && pip install markdown \
 && pip install mysqlclient
+
+EXPOSE 80
+
+ENTRYPOINT ["python"]
